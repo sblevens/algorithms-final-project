@@ -26,6 +26,7 @@ def bresenham_alg(x1,y1,x2,y2,points):
    error = dx >> 1
    y = y1
 
+   #prints out the plot points
    for x in range(x1,x2+1):
       if(steep):
          print("C" + str(y) + "," + str(x) + ")")
@@ -40,9 +41,6 @@ def bresenham_alg(x1,y1,x2,y2,points):
 
 
 def drawLine(points,color):
-
-    #q1, q2, q3, q4 = algorithm.midPointCircle(xCenter, yCenter, radius);
-    #points = algorithm.midPointCircle(xCenter, yCenter, radius)
 
     s = turtle.Screen()
     t = turtle.Turtle()
