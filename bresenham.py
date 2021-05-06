@@ -49,10 +49,12 @@ def drawLine(points,color):
     t.color(color)
     t.speed(10)
 
-    for i in range(len(points)):
+    for i in range(len(points)-1):
       x, y = points[i]
+      x2,y2 = points[i+1]
       t.goto(x, y)
       t.pendown()
-      t.forward(1)
+      #t.forward(1)
+      t.goto(x2,y2)
       t.penup()
 
